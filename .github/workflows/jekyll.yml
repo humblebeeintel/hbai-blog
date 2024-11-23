@@ -4,10 +4,9 @@ on:
   push:
     branches: ["main"]
     paths:
-      - '_posts/**'  # Trigger on changes to _posts folder
-      - '_config.yml'  # Also trigger on config changes
-      - 'assets/**'   # And on asset changes
-  # Allows manual triggering
+      - '_posts/**'
+      - '_config.yml'
+      - 'assets/**'
   workflow_dispatch:
 
 permissions:
@@ -27,20 +26,21 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1    # Changed to v1 for stability
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true
-          cache-version: 1          # Cache version added here
+          cache-version: 2  # Incremented the cache version
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Install Dependencies
+      - name: Clean and Install Dependencies
         run: |
+          rm -f Gemfile.lock
           bundle install
-          
+
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
