@@ -4,8 +4,8 @@ title: "hbai-blog"
 description: "Turning Ideas Into Impact"
 logo: 'assets/images/hbai_logo_name.png'
 favicon: 'assets/images/logo.png'
-baseurl: "/hbai-blog"
-url: "https://humblebeeintel.github.io"
+baseurl: ""
+url: "https://blog.humblebee.ai"
 google_analytics: 'UA-46278016-1'
 disqus: 'hbai-blog'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
