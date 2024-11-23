@@ -81,6 +81,14 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                 </li>
 
+                {% if page.url == "/categories" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/categories">Categories</a>
+                </li>
+
                 <li class="nav-item" style="color: orange !important;">
                     <a class="nav-link align-items-center d-flex justify-content-center" href="https://humblebee.ai/" target="_blank">Website <svg xmlns="http://www.w3.org/2000/svg" class="m-1" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
@@ -122,7 +130,7 @@ ga('send', 'pageview');
 {% if site.mailchimp-list %}
 <!-- Bottom Alert Bar
 ================================================== -->
-<div class="alertbar">
+<!-- <div class="alertbar">
 	<div class="container text-center" style="display: flex; justify-content: space-between;">
 		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}" style="max-height: 75px; max-width: 175px;"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
         <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
@@ -135,12 +143,12 @@ ga('send', 'pageview');
 </div>
 {% endif %}
     
-</div>
+</div> -->
 
 <!-- Categories Jumbotron
 ================================================== -->
-<div class="jumbotron fortags">
-	<div class="d-md-flex h-100">
+<div class="jumbotron fortags mb-5">
+	<div class="d-md-flex h-100 mb-5">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
                 <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
@@ -164,16 +172,16 @@ ga('send', 'pageview');
 
 <!-- Begin Footer
 ================================================== -->
-<footer class="footer d-flex justify-content-center ">
-    <div class="col-md-6 col-sm-6 text-lg-left">
-        <p class="text-center" >Copyright © {{ site.time | date: "%Y" }} {{ site.name }}</p>
-    </div>
-</footer>
+
 <!-- End Footer
 ================================================== -->
 
 </div> <!-- /.site-content -->
-
+<footer class="footer d-flex justify-content-center" style="margin: 0;">
+    <div class="col-md-6 col-sm-6 text-lg-left">
+        <p class="text-center" >Copyright © {{ site.time | date: "%Y" }} {{ site.name }}</p>
+    </div>
+</footer>
 <!-- Scripts
 ================================================== -->
 
