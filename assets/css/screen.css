@@ -19,14 +19,21 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 
-.navbar{
+/* .navbar{
     background: var(--bg-color);
     box-shadow: 0 1px 5px var(--primary);
-}
+} */
 
 
-body{
-    background-color: #240e05;
+/* set a background to have this path image  assets/images/starry-background.png */
+body {
+    background: url(../images/starry-background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 @media screen and (min-width:1500px) {
@@ -457,36 +464,12 @@ blockquote {
         height: 359px;
     }
 
-    .alertbar {
-        display: none !Important;
-    }
-
     #comments {
         margin-right: 15px;
     }
 
     .jumbotron.fortags {
         margin-bottom: 0 !Important;
-    }
-
-    .alertbar form {
-        margin-top: 20px;
-    }
-
-    .alertbar span,
-    .alertbar form {
-        display: block;
-    }
-
-    .alertbar input[type="submit"] {
-        border-radius: 3px !Important;
-    }
-
-    .alertbar input[type="email"] {
-        margin-right: 0px !Important;
-        display: block;
-        border-right: 1px solid var(--primary) !Important;
-        margin-bottom: 10px;
     }
 
     .jumbotron {
@@ -604,51 +587,8 @@ ul.tags li a:hover {
     margin-top: -4px;
 }
 
-.alertbar {
-    box-shadow: 0 -1px 5px 0 var(--primary);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    width: 100%;
-    padding: 14px 0;
-    z-index: 1;
-    display: none;
-}
 
-.alertbar form {
-    display: inline-block;
-}
 
-.alertbar input[type="email"] {
-    font-size: 0.85rem;
-    padding: 3px 5px 3px 10px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border: 1px solid var(--primary);
-    border-right: 0;
-    margin-right: -10px;
-    height: 34px;
-    letter-spacing: 0.5px;
-    margin-left: 5px;
-}
-
-.alertbar input[type="submit"] {
-    background-color: var(--primary); ;
-    border: 1px solid var(--primary);
-    color: var(--text-color);
-    fill: var(--text-color);
-    font-size: 0.85rem;
-    border-radius: 0;
-    padding: 4px 10px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    font-weight: 600;
-    height: 35px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-}
 
 .form-control::-webkit-input-placeholder {
     color: var(--light-text-color);
