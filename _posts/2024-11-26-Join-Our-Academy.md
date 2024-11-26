@@ -1,9 +1,9 @@
----
+---https://humblebee.ai/projects
 layout: post
 title: "HumbleBeeAI Academy: Trainee and Internship Opportunities Open!"
 author: humblebee_team
 categories: [ Opportunities, Training ]
-image: assets/images/academy-opportunities.jpg
+image: assets/images/academy-application.jpg
 description: "Join HumbleBeeAI Academy to become a top-tier AI talent. Applications for trainee and internship programs are now open!"
 featured: true
 hidden: false
