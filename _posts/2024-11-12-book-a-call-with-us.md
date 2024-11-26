@@ -1,12 +1,9 @@
 ---
 layout: post
 title: "Introducing the New 'Book a Demo' Feature on HumbleBeeAI Website!"
-author: humblebee_team
 categories: [ Updates, Features ]
 image: assets/images/book-a-demo.jpg
-description: "HumbleBeeAI introduces the 'Book a Demo' feature to easily schedule a call with our sales team. Learn how it works!"
 featured: true
-hidden: false
 ---
 
 ### 📞 **Book a Demo with HumbleBeeAI Sales Team!**
